@@ -149,7 +149,7 @@ function deleteCellPhoneById(id) {
 
 function loadUsers() {
     const content = document.getElementById('content');
-    content.innerHTML = ""; // Limpiar contenido antes de agregar nuevos elementos
+    content.innerHTML = ""; 
 
     const cardAdd = document.createElement('div');
     cardAdd.className = 'card';
@@ -239,7 +239,7 @@ function deleteUserByUserName(userName) {
 
 function loadOwners() {
     const content = document.getElementById('content');
-    content.innerHTML = ""; // Limpiar contenido antes de agregar nuevos elementos
+    content.innerHTML = ""; 
 
     const cardAdd = document.createElement('div');
     cardAdd.className = 'card';
@@ -302,22 +302,22 @@ function loadOwners() {
 
                 const btnDelete = document.createElement('button');
                 btnDelete.className = 'btn btn-danger';
-                btnDelete.id = `btn-delete-${owner.id}`;
+                btnDelete.id = `btn-delete-${owner.document}`;
                 btnDelete.textContent = 'Delete';
-                btnDelete.setAttribute('data-owner', owner.id);
+                btnDelete.setAttribute('data-code', owner.document);
 
                 btnDelete.addEventListener('click', function() {
-                    const ownerId = this.getAttribute('data-owner');
-                    deleteOwnerById(ownerId);
+                    const document = this.getAttribute('data-code');
+                    deleteOwnerByDocument(document);
                 });
 
                 const btnUpdate = document.createElement('a');
                 btnUpdate.className = 'btn btn-success margin';
-                btnUpdate.id = `btn-update-${owner.id}`;
+                btnUpdate.id = `btn-update-${owner.document}`;
                 btnUpdate.textContent = 'Update';
 
                 btnUpdate.addEventListener('click', function() {
-                    localStorage.setItem("ownerData", JSON.stringify(owner));
+                    localStorage.setItem("OwnerData", JSON.stringify(owner));
                     window.location.href = "./updateOwner.html";
                 });
 
