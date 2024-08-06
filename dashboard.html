@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Cell Phone</title>
+    <link rel="stylesheet" href="css/style_dashboard.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu Cell</h2>
+        <a class="nav-link active" onclick="cleanContent()" id="button-cellPhone">Cell Phone</a>
+        <a class="nav-link" onclick="cleanContent()" id="button-owner">Owner Cell Phone</a>
+        <a class="nav-link " onclick="cleanContent()" id="button-user">Users</a>
+    </div>
+    <div class="content" id="content">
+    </div>
+    <script src="js/script_dashboard.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            loadCellPhone();
+        });
+    </script>
+</body>
+</html>
