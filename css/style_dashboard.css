@@ -1,0 +1,169 @@
+body{
+    display: flex;
+    min-height: 100vh; /*Altura minima de la pantalla*/
+    margin: 0; /*Elimina el margen predeterminado*/
+    font-family: Arial, sans-serif; /*Fuente de texto*/
+}
+.sidebar{
+    width: 15%;
+    background-color: #b8cfe0;
+    padding: 5px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #000000;
+    overflow-y: auto;
+}
+.siderbar h4{
+    color: #000000;
+}
+.sidebar .nav-link{
+    display: block;
+    color: #000000;
+    padding: 6px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.sidebar .nav-link.active, .sidebar .nav-link:hover{
+    background-color: #e4dec7;
+    color: #000000;
+}
+.content{
+    margin-left: 15%;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    text-align: center;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid rgb(67, 63, 63);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgb(63, 127, 154);
+    margin: 10px;
+    width: calc(30%-20px);
+    display: inline-block;
+    vertical-align: top;
+    height: 300px;
+
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+
+}
+
+.card-text {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+    /* Muestra los botones como elementos en línea de bloque */
+    padding: 10px 10px;
+    /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
+    color: #fff;
+    /* Establece el color del texto en blanco */
+    background-color: #8b289b;
+    /* Establece el color de fondo azul */
+    text-decoration: none;
+    /* Elimina el subrayado de los botones */
+    border-radius: 4px;
+    /* Redondea las esquinas de los botones */
+
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+}
+
+.btn-danger {
+    display: inline-block;
+    border: none;
+    /* Muestra los botones como elementos en línea de bloque */
+    padding: 10px 10px;
+    /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
+    color: #fff;
+    /* Establece el color del texto en blanco */
+    background-color: #FB2A20;
+    /* Establece el color de fondo azul */
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    /* Elimina el subrayado de los botones */
+    border-radius: 4px;
+    /* Redondea las esquinas de los botones */
+    cursor: pointer;
+    font-weight: bold;
+    height: 38px;
+
+}
+
+.btn-danger:hover {
+    background-color: #83322e;
+    /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+}
+
+.btn-success {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    /* Muestra los botones como elementos en línea de bloque */
+    padding: 10px 10px;
+    /* Añade un relleno interno de 10px en la parte superior e inferior y 15px en los lados */
+    color: #fff;
+    /* Establece el color del texto en blanco */
+    background-color: #50BF07;
+    /* Establece el color de fondo azul */
+    text-decoration: none;
+    /* Elimina el subrayado de los botones */
+    border-radius: 4px;
+    /* Redondea las esquinas de los botones */
+    cursor: pointer;
+
+}
+
+.margin {
+    margin-left: 2%;
+}
+
+.btn-success:hover {
+    background-color: #498d1c;
+    /* Establece un color de fondo más oscuro cuando el botón se desplaza sobre él */
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 12.5%;
+}
+
+
+@media(max-width: 768px) {
+    .sideBar {
+        width: 40%;
+        height: auto;
+        position: relative;
+    }
+
+    .content {
+        margin-left: 0;
+        padding-top: 0;
+    }
+
+    .card {
+        width: 100%;
+
+        height: 220px;
+    }
+
+
+}

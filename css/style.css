@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.form-login {
+    width: 350px;
+    height: 400px;
+    background-color: rgb(110, 173, 202);
+    padding-top: 20px;
+    margin: 50px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -10px 20px 15px 10px gray;
+}
+
+h1{
+    color: rgb(2, 2, 2);
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+input{ 
+    font-size: 16px;
+    padding: 8px; 
+    display: block;
+    margin: 10px auto;
+}
+
+label{
+    color: rgb(0, 0, 0); 
+    display: block; 
+    margin: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+input[type='button']{
+    width: 100px; /*ancho de botones*/
+    margin-top: 20px; /*margen superior a los botones*/
+    font-size: 20px; /*tamaño de fuente de los botones*/
+    display: block; /*botones como elementos*/
+    background-color: rgb(201, 169, 206); /*color de ¿fondo del boton*/
+    cursor: pointer; /*cambia cursor a puntero*/
+
+}
+
+input[type='button']:hover {
+    background-color: rgb(201, 169, 206); /*cambia el color de fondo del boton*/
+
+}
